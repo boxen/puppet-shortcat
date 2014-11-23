@@ -3,9 +3,11 @@
 # Usage:
 #
 #   include shortcat
-class shortcat {
+class shortcat (
+  $version = 'v0.7.4'
+) {
   package { 'Shortcat':
-    source   => 'https://files.shortcatapp.com/v0.6.1/Shortcat.zip',
+    source   => "https://files.shortcatapp.com/${version}/Shortcat.zip",
     provider => 'compressed_app'
   }
 }
