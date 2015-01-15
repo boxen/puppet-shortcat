@@ -8,7 +8,7 @@ describe 'shortcat' do
 
   context 'with no parameters' do
     it_behaves_like 'it installs shortcat'
-    it { should contain_package('Shortcat').with_source('https://files.shortcatapp.com/v0.7.4/Shortcat.zip') }
+    it { should contain_package('Shortcat').with_source('https://files.shortcatapp.com/v0.7.5/Shortcat.zip') }
   end
 
   context 'with a version' do
