@@ -10,6 +10,18 @@ Installs [Shortcat](http://shortcatapp.com/).
 include shortcat
 ```
 
+You can specify a version:
+
+``` puppet
+class { 'shortcat': version => 'v1.0.0' }
+```
+
+...or in Hiera...
+
+``` yaml
+shortcat::version: v1.0.0
+```
+
 ## Required Puppet Modules
 
 * `boxen`
